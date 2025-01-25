@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Uploader with Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Container -->
+  <div class="auth-container" id="auth-container">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username">
+    <input type="password" id="login-password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <span onclick="showSignup()">Sign up</span></p>
+  </div>
+
+  <!-- Signup Container -->
+  <div class="auth-container hidden" id="signup-container">
+    <h2>Sign Up</h2>
+    <input type="text" id="signup-username" placeholder="Username">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+  </div>
+
+  <!-- File Uploader Container -->
+  <div class="uploader-container hidden" id="uploader-container">
+    <div class="header">
+      <h2>HELLO BSIT 3B</h2>
+      <button onclick="exitWebsite()" class="exit-button">Exit</button>
+    </div>
+    <div class="upload-area" id="upload-area">
+      <input type="file" id="file-input" multiple hidden>
+      <label for="file-input">
+        <div class="upload-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="Upload Icon" />
+        </div>
+        <p>Browse File to Upload</p>
+      </label>
+    </div>
+    <div class="file-list" id="file-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

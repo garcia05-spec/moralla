@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #10d3d6;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .auth-container,
+  .uploader-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h2,
+  .uploader-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .auth-container input,
+  .auth-container button,
+  .uploader-container input,
+  .uploader-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .auth-container button,
+  .uploader-container button {
+    background: #0581e7;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-container span {
+    color: #90caf9;
+    cursor: pointer;
+  }
+  
+  .upload-area {
+    border: 2px dashed #90caf9;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .upload-area:hover {
+    background-color: #e3f2fd;
+  }
+  
+  .upload-icon img {
+    width: 50px;
+  }
+  
+  .upload-area p {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .file-list {
+    margin-top: 20px;
+  }
+  
+  .file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .file-item .progress-bar {
+    flex: 1;
+    margin: 0 10px;
+    height: 8px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .file-item .progress-bar div {
+    height: 100%;
+    background: #90caf9;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .file-item .status {
+    font-size: 14px;
+    color: #4caf50;
+  }
+  
+  .exit-button {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
